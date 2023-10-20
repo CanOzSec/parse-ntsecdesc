@@ -61,4 +61,5 @@ def main():
         except:
             print(Fore.RED + "Parsing Error!")
 
-main()
+if __name__ == "__main__":
+    main()
