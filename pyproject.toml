@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parse-ntsecdesc"
+version = "0.1.0"
+description = "A basic nTSecurityDescriptor parser"
+requires-python = ">=3"
+license = {text = "MIT"}
+dependencies = [
+	"colorama",
+	"ldap3"
+]
+
+[project.scripts]
+parse-ntsecdesc = "parse_ntsecdesc.__main__:main"
